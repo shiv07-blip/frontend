@@ -1,0 +1,120 @@
+
+.Navbar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .Navbar .nav-link {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 8px 12px; 
+  }
+  
+  .Navbar .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 4px; 
+  }
+  
+  .Navbar .search-input {
+    border-radius: 4px; 
+    padding: 6px 12px;
+    border: 1px solid #ccc; 
+    width: 200px;
+  }
+  
+  .Navbar .search-input:focus {
+    outline: none; 
+    border-color: #635985; 
+    box-shadow: 0 0 5px #635985; 
+  }
+  
+  @media (max-width: 768px) {
+    .Navbar {
+      padding: 10px; 
+    }
+  
+    .Navbar .search-input {
+      width: 100%; 
+    }
+  
+    .Navbar ul {
+      flex-direction: column; 
+    }
+  }
+
+  .profile-section {
+    position: relative;
+  }
+  
+  .profile-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-btn .icon {
+    margin-right: 8px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px 0;
+    z-index: 2000;
+  }
+  
+  .dropdown-header {
+    padding: 10px;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-login {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #635985;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .dropdown-login:hover {
+    background-color: #393053;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f9f9f9;
+  }
+  
